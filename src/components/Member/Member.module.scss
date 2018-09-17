@@ -1,0 +1,115 @@
+.memberCard {
+    height: 40px;
+    padding: 16px 10px;
+    display: flex;
+    box-sizing: content-box;
+
+    .memberAvatar {
+        flex-grow: 1;
+        max-width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .tooltip {
+        position: absolute;
+        background-color: #ffffff;
+        font-size: 12px;
+        top: -30px;
+        left: -15px;
+        width: 70px;
+        padding: 3px;
+        box-sizing: content-box;
+        box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+
+        &::after {
+            content: '';
+            /* text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+            position: absolute;
+            top: 88%;
+            left: 35px;
+            color: #ffffff; */
+            width: 0px;
+            height: 0px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #ffffff;
+            position: absolute;
+            top: 100%;
+            left: 30px;
+        }
+        &::before {
+            content: '';
+            /* text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+            position: absolute;
+            top: 88%;
+            left: 35px;
+            color: #ffffff; */
+            width: 0px;
+            height: 0px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid rgba(0,0,0,.3);
+            position: absolute;
+            top: 100%;
+            left: 28px;
+        }
+    }
+
+    .memberButton {
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #ffffff; 
+        width: 40px;
+        height: 40px;
+        
+        img {
+            width: 40px;
+            height: auto;
+        }
+    
+        &::after {
+            content: '\00d7';
+            display: none;
+            color: #ff712e;
+            font-size: 25px;
+        }
+    
+        &:hover {
+            border: 1px solid #ff712e;
+        }
+    }
+
+    &:hover {
+        background-color: #e2f4ea;
+
+        .memberButton{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img {
+                display: none;
+            }
+
+            &::after {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.memberData {
+    flex-grow: 1;
+}
+
+.role {
+    display: block;
+}
+
+.name {
+    display: block;
+    font-weight: bold;
+}

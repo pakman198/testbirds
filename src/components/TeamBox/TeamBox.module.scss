@@ -1,0 +1,66 @@
+.teamBox {
+    border-top: 3px solid #007672;
+    padding: 0 15px 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}
+
+.title {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+.card {
+    height: 40px;
+    padding: 16px 10px;
+    color: #007874;
+    font-weight: bold;
+    display: flex;
+    box-sizing: content-box;
+
+    .addButton {
+        background-color: #e2f4ea;
+        border: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+        color: #007874;
+        width: 40px;
+        height: 40px;
+        flex-grow: 1;
+        max-width: 40px;
+        font-size: 25px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .cardText {
+        flex-grow: 1;
+        max-width: 55%;
+    }
+
+    &:hover {
+        background-color: #e2f4ea;
+
+        .addButton {
+            background-color: #ffffff;
+        }
+    }
+}
+
+.showAll {
+    background-color: #e2f4ea;
+    text-align: center;
+    padding: 5px;
+
+    p{
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
