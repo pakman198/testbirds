@@ -12,7 +12,7 @@ class TeamBox extends React.Component {
         showAll: true
     }
 
-    componentWillMount() {
+    componentDidMount() {
         const teamMembers = localStorage.getItem('testBirds_TeamMembers');
 
         if(teamMembers) {
