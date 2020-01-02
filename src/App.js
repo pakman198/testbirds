@@ -5,9 +5,9 @@ import logo from './logo.svg';
 import TeamBox from './components/TeamBox/TeamBox';
 
 //styles
-import './App.scss';
-import './App.less';
-import './App.styl';
+import './App.css';
+// import './App.less';
+// import './App.styl';
 
 //modules
 import cssStyles from './First.module.css';
